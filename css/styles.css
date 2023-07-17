@@ -143,6 +143,9 @@ button {
    .menu-toggle{
     display: none;
   }
+  .nav-line{
+    height: 72px;
+  }
 }
 @media only screen and (min-width: 1158px) {
   .nav-list,
