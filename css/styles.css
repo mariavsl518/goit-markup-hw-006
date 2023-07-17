@@ -383,7 +383,9 @@ button {
 
                 /* What are we doing */
 
-
+.wawd-section{
+    padding-top: 0;
+  }
 .wawd-list {
     display: flex;
     gap: 24px;
@@ -398,6 +400,7 @@ button {
       display: none;
   } 
 }
+
 
                     /* Team */
 
@@ -470,18 +473,13 @@ button {
 }
 
 @media only screen and (min-width: 768px) {
-    .team-section{
-    }
     .team-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap:24px;
+    row-gap: 64px;
     }
-}
-
-@media (min-width:1158px){
-   
 }
 
                     /* Customers */
@@ -492,14 +490,11 @@ button {
     display:flex;
     flex-wrap: wrap;
     gap: 16px;
+    row-gap: 72px;
     justify-content: center;
-
 }
 .cust-item{
     transition: color var(--animation), border-color var(--animation);
-}
-.cust-item:not(:nth-child(5),:nth-child(6)){
-    margin-bottom: 72px;
 }
 .cust-link{
     width: 190px;
@@ -533,23 +528,13 @@ button {
 @media only screen and (min-width: 768px) {
    .customers-list{
         gap: 24px;
+        row-gap: 72px;
     }
-    .cust-item:nth-child(4){
-        margin: 0;
-    }
+
     .cust-link{
         width: 168px;
     }
 
-}
-@media only screen and (min-width: 1158px) {
-   .customers-list{
-        gap: 24px;
-
-    }
-    .cust-item:not(:nth-child(5),:nth-child(6)){
-    margin-bottom:0;
-}
 }
 
                     /* PORTFOLIO */
@@ -706,6 +691,7 @@ button {
     color: var(--cloud-color);
     padding: 98px 0px;
 }
+
 .footer-inner-container{
     display: flex;
     flex-direction: column;
@@ -766,12 +752,13 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    justify-content: center;
+    row-gap: 72px;
+    padding-left: 108px;
   }
   .footer-container{
   }
   .footer-inner-container{
-    margin-bottom: 48px;
+    margin-bottom: 0;
     justify-content: flex-start;
   }
   .footer-logo{
