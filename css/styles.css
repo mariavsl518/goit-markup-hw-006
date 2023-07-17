@@ -548,6 +548,7 @@ button {
     flex-wrap: wrap;
     width: 428px;
     gap: 24px;
+    row-gap: 16px;
     margin-bottom: 48px;
 }
 @media only screen and (min-width: 768px) {
